@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- google-icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css
+    ">
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=El+Messiri&family=Roboto:wght@300;400;700&family=Rosario:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card">
+            <div id="mode">
+                <i id="dark_mode_icon" onclick="darkMode()" onmouseover="modeText()" onmouseout="removeText()"
+                    class="fa-solid fa-moon"></i>
+                <i id="light_mode" onclick="lightMode()" onmouseover="lightModeText()" onmouseout="lightRemoveText()"
+                    class="fa-solid fa-sun"></i>
+                <span id="mode_text"></span>
+
+            </div>
+
+            <div class="content">
+                <div>
+                    <img id="profile-img" src="./images/profile-pic.jpg" alt="">
+                    <img id="ring-img" src="./images/half-ring.png" alt="">
+                </div>
+                <h2 id="name">Ashar Ahmed</h2>
+                <span id="span">Web Developer</span>
+                <p id="intro">Student of Computer Science and a Front-End Developer Using HTML5, CSS3 and JS in Web
+                    Development</p>
+                <p id="mail">ahmedashar12345@gmail.com</p>
+                <div class="icons">
+                    <i class="icon_dark_mode fa-brands fa-github"></i>
+                    <i class="icon_dark_mode fa-brands fa-instagram"></i>
+                    <i class="icon_dark_mode fa-brands fa-facebook"></i>
+                    <i class="icon_dark_mode fa-brands fa-linkedin-in"></i>
+                    <i class="icon_dark_mode fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
