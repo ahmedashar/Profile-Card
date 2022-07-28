@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="card" id="card">
             <div id="mode">
@@ -31,21 +32,53 @@
             </div>
 
             <div class="content">
-                <div>
-                    <img id="profile-img" src="./images/profile-pic.jpg" alt="">
+
+                <img id="profile-img" src="./images/pic1.jpg" onmouseover="src='./images/pic2.jpeg';"
+                    onmouseout="src='./images/pic1.jpg';">
+
+                <div id="temp">
+                    <h2 id="name">Ashar Ahmed</h2>
                     <img id="ring-img" src="./images/half-ring.png" alt="">
                 </div>
-                <h2 id="name">Ashar Ahmed</h2>
                 <span id="span">Web Developer</span>
+
+
                 <p id="intro">Student of Computer Science and a Front-End Developer Using HTML5, CSS3 and JS in Web
                     Development</p>
                 <p id="mail">ahmedashar12345@gmail.com</p>
+
+
                 <div class="icons">
-                    <i class="icon_dark_mode fa-brands fa-github"></i>
-                    <i class="icon_dark_mode fa-brands fa-instagram"></i>
-                    <i class="icon_dark_mode fa-brands fa-facebook"></i>
-                    <i class="icon_dark_mode fa-brands fa-linkedin-in"></i>
-                    <i class="icon_dark_mode fa-brands fa-whatsapp"></i>
+                    <a href="https://github.com/ahmedashar" target="_blank"> <i
+                            onmouseover="document.getElementById('github-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('github-span').style.visibility='hidden'"
+                            id="github-icon" class="icon_dark_mode fa-brands fa-github"></i>
+                        <span id="github-span" class="icons-span">GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/ahmedashar240/" target="_blank"> <i
+                            onmouseover="document.getElementById('instagram-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('instagram-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-instagram"></i>
+                        <span id="instagram-span" class="icons-span">Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/ashar.ahmed.3333/" target="_blank"> <i
+                            onmouseover="document.getElementById('facebook-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('facebook-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-facebook"></i>
+                        <span id="facebook-span" class="icons-span">Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashar-ahmed-00ba36199/" target="_blank"> <i
+                            onmouseover="document.getElementById('linkedin-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('linkedin-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-linkedin-in"></i>
+                        <span id="linkedin-span" class="icons-span">Linkedin</span>
+                    </a>
+                    <a href="#" target="_blank"> <i
+                            onmouseover="document.getElementById('whatsapp-span').style.visibility='visible'"
+                            onmouseout="document.getElementById('whatsapp-span').style.visibility='hidden'"
+                            class="icon_dark_mode fa-brands fa-whatsapp"></i>
+                        <span id="whatsapp-span" class="icons-span">WhatsApp</span>
+                    </a>
                 </div>
             </div>
         </div>

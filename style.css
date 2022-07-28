@@ -17,13 +17,14 @@ body {
   -moz-box-shadow: 0px 0px 34px 4px rgba(65, 57, 79, 0.75);
 }
 #mode {
-  margin: 10px;
+  margin: 10px 10px 0px 10px;
 }
 #mode_text {
   font-size: 12px;
   position: relative;
   left: -45px;
   top: -3px;
+  font-family: "Varela Round", sans-serif;
 }
 #mode #dark_mode_icon {
   font-size: 25px;
@@ -46,25 +47,32 @@ body {
   left: -45px;
   bottom: -2px;
 }
+
 #profile-img {
   margin-top: 30px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  position: absolute;
+  z-index: 100;
 }
-#ring-img {
-  width: 260px;
-  left: -10px;
+#temp {
   position: relative;
 }
+
 #name {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 0px;
   font-size: 30px;
 
   font-family: "Varela Round", sans-serif;
+}
+#ring-img {
+  position: absolute;
+  z-index: 10;
+  left: -32px;
+  top: -230px;
+  width: 260px;
 }
 #span {
   font-family: "Varela Round", sans-serif;
@@ -97,4 +105,27 @@ body {
   font-size: 30px;
   padding: 0px 20px;
   color: #27245e;
+  position: relative;
+  transition: 0.5s;
+}
+.icons i:hover {
+  transform: translateY(-10px);
+}
+.icons a {
+  position: relative;
+}
+
+.icons-span {
+  position: absolute;
+  left: 8px;
+  top: 15px;
+  text-decoration: none;
+  font-size: 12px;
+  visibility: hidden;
+}
+#github-span {
+  left: 15px;
+}
+#whatsapp-span {
+  left: 6px;
 }
